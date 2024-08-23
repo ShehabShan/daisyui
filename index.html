@@ -142,7 +142,7 @@
         >
           The barn house captivates with its blend of rustic charm and modern
           sophistication, featuring weathered wood, sleek metal accents, and
-          large windows that flood the space with natural light.
+          large<br> windows that  flood the space with natural light.
         </p>
         <button
           class="btn btn-active btn-secondary bg-[#d5f6b2] text-[#212121] text-[20px] font-extrabold w-[85%] lg:w-[210px] h-[58px] m-auto border-none rounded-full"
@@ -156,16 +156,25 @@
     </header>
     <!-- main start here -->
     <main class="lg:w-[1440px] m-auto">
-      <div class="bg-[#f4f4f4] m-auto space-y-6 lg:flex lg:px-[135px] lg:py-[100px]">
-        <div class="">
+      <div
+        class="bg-[#f4f4f4] m-auto space-y-6 lg:flex lg:px-[100px] lg:py-[100px] lg:relative"
+      >
+        <img
+          class="hidden lg:block lg:w-23 lg:h-10 lg:absolute lg:top-[120px] lg:left-[80px]"
+          src="./images/Vector.png"
+          alt=""
+        />
+        <div>
           <div class="flex flex-col m-5 space-y-4">
             <div class="text-center lg:text-left">
-              <button class="btn bg-[#ffffff] rounded-full mt-8 ">
+              <button class="btn bg-[#ffffff] rounded-full mt-8">
                 <i class="ri-arrow-right-line text-2xl"></i> About Us
               </button>
             </div>
 
-            <h1 class="text-hColor text-[26px] font-extrabold text-center lg:text-left lg:text-4xl lg:font-bold">
+            <h1
+              class="text-hColor text-[26px] font-extrabold text-center lg:text-left lg:text-4xl lg:font-bold"
+            >
               We design thoughtful, liveable spaces
             </h1>
             <p class="text-pColor font-medium text-center lg:text-left">
