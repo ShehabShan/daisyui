@@ -68,11 +68,21 @@
         </div>
         <div class="items-center hidden lg:block">
           <ul class="flex space-x-9">
-            <li class="text-pColor font-bold cursor-pointer"><a>Home</a></li>
-            <li class="text-[#737373] cursor-pointer"><a>Service</a></li>
-            <li class="text-[#737373] cursor-pointer"><a>Portfolio</a></li>
-            <li class="text-[#737373] cursor-pointer"><a>Blogs</a></li>
-            <li class="text-[#737373] cursor-pointer"><a>Contact Us</a></li>
+            <li class="text-pColor font-bold cursor-pointer">
+              <a href="#Home">Home</a>
+            </li>
+            <li class="text-[#737373] cursor-pointer">
+              <a href="#Service">Service</a>
+            </li>
+            <li class="text-[#737373] cursor-pointer">
+              <a href="#Portfolio">Portfolio</a>
+            </li>
+            <li class="text-[#737373] cursor-pointer">
+              <a href="#Blogs">Blogs</a>
+            </li>
+            <li class="text-[#737373] cursor-pointer">
+              <a href="#Contact">Contact Us</a>
+            </li>
           </ul>
         </div>
         <div class="hidden lg:block lg:space-x-3">
@@ -129,7 +139,10 @@
           </ul>
         </div>
       </nav>
-      <div class="flex flex-col justify-center items-center space-y-5">
+      <div
+        id="Home"
+        class="flex flex-col justify-center items-center space-y-5"
+      >
         <img
           class="lg:w-[570px] lg:h-[350px] sm:w-[430px] sm:h-[260px]"
           src="./images/banner.png"
@@ -153,7 +166,7 @@
         >
           View Details
           <i
-            class="ri-arrow-right-up-line bg-[#aeef6c] w-6 h-6 text-2xl rounded-full mt-1 text-black"
+            class="ri-arrow-right-up-line bg-[#aeef6c] w-9 h-9 text-3xl rounded-full mt-1 text-black"
           ></i>
         </button>
       </div>
@@ -228,6 +241,7 @@
         </div>
       </div>
       <section
+        id="Service"
         class="bg-[#f4f4f4] lg:flex lg:flex-col lg:px-[100px] lg:rounded-xl"
       >
         <div class="mb-8">
@@ -300,7 +314,7 @@
         </div>
       </section>
       <!-- Portfollo Section -->
-      <section class="bg-[#f4f4f4] lg:bg-[#ffffff] lg:m-[100px]">
+      <section id="Portfolio" class="bg-[#f4f4f4] lg:bg-[#ffffff] lg:m-[100px]">
         <div class="flex flex-col m-5 space-y-5">
           <div class="text-center lg:text-center">
             <button
@@ -434,7 +448,7 @@
 
       <!-- Artical and news section start here -->
 
-      <section class="bg-[#f4f4f4] lg:bg-[#f4f4f4] pb-8">
+      <section id="Blogs" class="bg-[#f4f4f4] lg:bg-[#f4f4f4] pb-8">
         <div class="">
           <div class="flex flex-col m-5 space-y-5 lg:m-[100px]">
             <div class="text-center lg:text-center lg:mt-20">
@@ -567,9 +581,10 @@
 
       <!-- contact section start here -->
       <section
-        class="bg-[url('./images/bg.jpg')] bg-no-repeat bg-cover bg-center"
+        id="Contact"
+        class="bg-[url('./images/bg.jpg')] bg-no-repeat bg-cover bg-center pb-16"
       >
-        <div class="flex flex-col p-5 space-y-5 ">
+        <div class="flex flex-col p-5 space-y-5">
           <div class="text-center lg:text-center lg:mt-20">
             <button
               class="btn bg-[#eefce0] rounded-full mt-8 text-[20px] font-medium"
@@ -598,8 +613,16 @@
         >
           <input type="text" placeholder="Fast Name*" class="p-5 rounded-2xl" />
           <input type="text" placeholder="Fast Name*" class="p-5 rounded-2xl" />
-          <input type="text" placeholder="Fast Name*" class="p-5 rounded-2xl" />
-          <input type="text" placeholder="Fast Name*" class="p-5 rounded-2xl" />
+          <input
+            type="text"
+            placeholder="Phone Number*"
+            class="p-5 rounded-2xl"
+          />
+          <input
+            type="text"
+            placeholder="Email Address*"
+            class="p-5 rounded-2xl"
+          />
 
           <textarea
             rows="10"
@@ -613,11 +636,49 @@
           >
             Send Mail
             <i
-              class="ri-arrow-right-up-line bg-black w-6 h-6 text-2xl rounded-full mt-1 text-white"
+              class="ri-arrow-right-up-line bg-black w-9 h-9 text-3xl rounded-full mt-1 text-white"
             ></i>
           </button>
         </div>
       </section>
     </main>
+    <footer class="bg-[#1c1c1c] lg:w-[1440px] lg:m-auto py-[50px]">
+      <div class="m-5 flex flex-col gap-5 lg:gap-10">
+        <div class="lg:w-[680px] m-auto">
+          <h1 class="text-[32px] font-extrabold text-[#e9e9e9] text-center">
+            <i
+              class="ri-arrow-right-up-line bg-[#aeef6c] w-9 h-9 text-3xl rounded-full mt-1 text-black"
+            ></i>
+            Rintero
+          </h1>
+          <p class="text-[16px] font-medium text-center text-[#737373]">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <div>
+          <ul
+            class="flex flex-col gap-5 text-[#e9e9e9] text-center lg:flex-row lg:justify-center lg:space-x-12 lg:text-[18px] lg:font-light"
+          >
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Blogs">Blogs</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="text-center lg:mx-60">
+          <button
+            class="btn btn-active btn-secondary bg-[#aeef6c] text-[#212121] text-[20px] font-extrabold w-[85%] lg:w-[230px] h-[58px] m-auto border-none rounded-full"
+          >
+            Book Consult
+            <i
+              class="ri-arrow-right-up-line bg-black w-9 h-9 text-3xl rounded-full mt-1 text-white"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
